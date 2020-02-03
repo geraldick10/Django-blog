@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block page_title %}
+
+      {% endblock page_title %}
+    </title>
+    {% include "blog/snippets/style.html" %}
+  </head>
+  <body>
+
+    {% include "blog/snippets/navbar.html" %}
+    {% block content %}
+    {% endblock content%}
+    {% include "blog/snippets/footer.html" %}
+    {% include "blog/snippets/script.html" %}
+  </body>
+</html>
